@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Logo place holder</div>
+        <div class="search-container">
+            <input type="text" id="video-url" placeholder="Paste the url">
+            <button onclick="loadVideo()">Search</button>
+        </div>
+        <div class="content">
+            <div class="ad left-banner">
+                <iframe src="your-ad-url-here" frameborder="0" scrolling="no" width="160" height="600"></iframe>
+            </div>
+            <div class="video-player">
+                <div class="plyr__video-embed" id="player">
+                    <iframe src="https://www.youtube.com/watch?v=hOyEyPP_R6g" allowfullscreen allowtransparency allow="autoplay"></iframe>
+                </div>
+            </div>
+            <div class="ad right-banner">
+                <iframe src="your-ad-url-here" frameborder="0" scrolling="no" width="160" height="600"></iframe>
+            </div>
+        </div>
+        <div class="bottom-banner">
+            <iframe src="your-ad-url-here" frameborder="0" scrolling="no" width="728" height="90"></iframe>
+        </div>
+    </div>
+    <script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
